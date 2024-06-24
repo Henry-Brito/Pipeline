@@ -1,5 +1,5 @@
 import unittest
-from media_devops import valor_minimo_p2
+from media_devops import valor_minimo_p2  # Substitua 'your_module' pelo nome do módulo onde a função está definida
 
 class TestValorMinimoP2(unittest.TestCase):
 
