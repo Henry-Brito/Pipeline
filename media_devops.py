@@ -11,14 +11,10 @@ def valor_minimo_p2(q2, p1, n2):
 
     return round(p2, 2)
 
-
-
-# q2 = quiz de docker (o de git não vai valer)
-# p1 = pratica docker individual
-# n2 = pratica em dupla de git
-
-# nessa função nos iremos descobrir a nota minima que você precisa tirar na prática de amanhã para sua média chegar a 7
+q2 = float(input())
+p1 = float(input())
+n2 = float(input())
 
 # Chamando a função e imprimindo o resultado
-valor_minimo = valor_minimo_p2(q2=8.33, p1=4, n2=9.5) # passa os parametros aqui e é bala
+valor_minimo = valor_minimo_p2(q2=q2, p1=p1, n2=n2) # passa os parametros aqui e é bala
 print(f"O valor mínimo de p2 para que a média final seja 7 é: {valor_minimo}")

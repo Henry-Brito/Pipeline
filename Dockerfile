@@ -1,8 +1,8 @@
-FROM python:3.10
+FROM python
 
 WORKDIR /media_devops
-COPY . .
+COPY media_devops .
 
-RUN pip install -f requirements.txt
+RUN pip install -r requirements.txt
 
 CMD [ "python", "media_devops.py" ]
