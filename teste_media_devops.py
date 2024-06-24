@@ -7,4 +7,4 @@ class TestValorMinimoP2(unittest.TestCase):
         self.assertAlmostEqual(valor_minimo_p2(q2=8.33, p1=4, n2=9.5), 7.55, places=2)
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main() 
