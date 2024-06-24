@@ -7,9 +7,6 @@ on:
   pull_request:
     branches: [ "Qa" ]
 
-permissions:
-  contents: read
-
 jobs:
   build:
 
