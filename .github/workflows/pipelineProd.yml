@@ -7,9 +7,6 @@ on:
   pull_request:
     branches: [ "Prod" ]
 
-permissions:
-  contents: read
-
 jobs:
   build:
 
