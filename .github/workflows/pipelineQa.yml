@@ -1,8 +1,8 @@
-name: Prod test
+name: Qa test
 
 on:
   pull_request:
-    branches: [ "Prod" ]
+    branches: [ "Qa" ]
 
 jobs:
   build:
@@ -26,15 +26,3 @@ jobs:
           
     - name: Resultados
       run: coverage report
-
-    - name: Log in to Docker Hub
-      run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
-
-    - name: Verificar login no Docker Hub
-      run: docker info
-
-    - name: Build Docker image
-      run: docker build -t henrybrito/media_devops:${{github.run_number}} .
-
-    - name: Push Docker image
-      run: docker push henrybrito/media_devops:${{github.run_number}}
